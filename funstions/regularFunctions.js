@@ -13,3 +13,14 @@ function addNumbers(){
 }
 
 console.log(addNumbers(2,3,4,5,6,7,))
+
+
+function ADDnUMBERS(...numbers){ //using rest parameter syntax
+  let ans=0;
+  for(let i=0;i<numbers.length;i++){
+    ans+=numbers[i];
+  }
+  return ans
+}
+
+console.log(2,4,5,63,2,4,4,35,52,3);
