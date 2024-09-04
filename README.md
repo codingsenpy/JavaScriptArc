@@ -1,2 +1,2 @@
 # JavaScriptArc
-repo for learning javascript
+journal for learning javascript 
