@@ -1,0 +1,5 @@
+&& --> AND    if(cond1 && cond2)
+|| --> OR    if(cond1 || cond2)
+= --> if equals then true  if(x=y)
+!= --> NOT    if(x!=y)
+
