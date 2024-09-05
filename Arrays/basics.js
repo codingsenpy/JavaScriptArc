@@ -9,3 +9,18 @@ console.log(s4[0]);
 s4[0]="Clem";
 //append new element at end of array
 s4.push("Minerva");
+//add element to start of array
+s4.unshift("Lee");
+//remove last element
+s4.pop();
+//remove first element
+s4.shift();
+// check if element exists in array
+s4.includes("Kenny")//false
+//sort
+s4.sort()
+//reverse
+s4.reverse
+//Joins all elements of an array into a string and returns it.
+s4.join('-');//each element seperated by '-'
+//
