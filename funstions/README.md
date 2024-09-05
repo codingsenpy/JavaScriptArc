@@ -3,7 +3,7 @@ u can access it by using arguments.length
 u can access each argument in order by using "arguments[i]"
 
 OR
-
+*Spread operator*
 u can use "rest parameter syntax" to store all the arguments passed in an array like 
 function add(...nums) here nums is an array
 
@@ -14,3 +14,5 @@ syntax: const functionname=(argument1,argument2,....)=>{
                     };
         *OR*(for "one liner" arrow functions which has only return statement we can
         const functioname=(argument1,argument2,....)=> argument1+argument2+....    //in one liner functions we dont need to use return keyword
+
+'arguments' ketword: the "arguments" object is not available or doesnt exist in arrow functions so we have to use *spread operator* ^refer above^
