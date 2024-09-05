@@ -9,3 +9,11 @@ sayHello();    //function call like regular function
 // };            this function is valid and syntactically correct 
 //"better" way to write this function
 const add=(a,b)=>a+b;  //since the function had only 1line in body we can write the function like this
+
+const dynamicAdd=(...list)=>{
+  let ans=0;
+  for(let i=0;i<list.length;i++){
+    ans+=list[i];
+  }
+  return ans;
+};
