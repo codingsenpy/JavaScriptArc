@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Query Selection Practice</title>
+</head>
+<body>
+    <header>
+        <h1 id="main-heading">My Awesome Website</h1>
+        <p class="intro">Welcome to my website. Feel free to explore!</p>
+    </header>
+    <section id="info-section">
+        <h2>Information</h2>
+        <p class="info">This section contains important information.</p>
+        <p class="info">Another piece of important information.</p>
+    </section>
+    <footer>
+        <button id="footer-button">Click Me!</button>
+    </footer>
+    <ul id="item-list">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+    </ul>
+</body>
+  <script>
+    const body=document.querySelector("body");  //selects the whole body of the html
+    body.innerHTML="<h1>Hacked</h1>";           //discards all the inner html and replaces it with the value u provide
+    const foot=document.quesrySelector("footer");
+    foot.innerHTML="<p>ur foot gone</p>";
+  </script>
+</html>
