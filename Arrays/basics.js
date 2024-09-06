@@ -16,11 +16,11 @@ s4.pop();
 //remove first element
 s4.shift();
 // check if element exists in array
-s4.includes("Kenny")//false
+consolr.log(s4.includes("Kenny"))//false
 //sort
 s4.sort()
 //reverse
-s4.reverse
+s4.reverse();
 //Joins all elements of an array into a string and returns it.
-s4.join('-');//each element seperated by '-'
+const fullcast=s4.join('-');//each element seperated by '-'
 //
