@@ -7,6 +7,8 @@ console.log(s4.length);
 console.log(s4[0]);
 //change specific element
 s4[0]="Clem";
+//find index of element
+console.log(s4.indexOF("AJ"));//1
 //append new element at end of array
 s4.push("Minerva");
 //add element to start of array
