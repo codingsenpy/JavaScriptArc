@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener Practice</title>
+</head>
+<body>
+    <h1 onclick="alert('u clicked me')" >Event Listener Practice</h1>                          //!--- can add onclick on any element --->
+<h1 id="head1">click and make me red</h1>
+    <!-- Button to demonstrate click event -->
+    <button id="click-button" onclick="console.log('I just got clicked')">Click Me!</button>    //!---inline js to listen for button clicks--->
+
+    <!-- Input field to demonstrate input event -->
+    <input type="text" id="text-input" placeholder="Type something here">
+
+    <!-- Button to demonstrate mouse over event -->
+    <button id="hover-button" onclick="buttonclicked()">Hover Over Me!</button>    //calling function when clicked
+
+    <!-- Input field to demonstrate focus and blur events -->
+    <input type="text" id="focus-input" placeholder="Click to focus and blur">
+
+    <button id="click-button">BUTTON</button>
+  
+  <button id="preffered">prefered way to handle buttonclicks</button>
+
+  <script>
+
+    function buttonclicked(){
+      console.log("got clicked");
+      alert("u clickd me");
+    }
+    const el=document.getElementById("click-button");
+    el.onclick=function (){
+      alert("stop clicking me");
+    };
+/*
+    MOST
+        PREFERRED WAY
+                FOR EVENTLISTEN
+                */
+    const ele=document.getElementById("preffered");
+    ele.addEventListener('click',()=>{
+      alert("this is how pros do it");
+    });
+
+    const head1=document.getElementById("head1");
+    head1.addEventListener("click",()=>{
+      head1.style.color="red";
+    });
+    
+  </script>
+</body>
+</html>
