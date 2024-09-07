@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener Practice</title>
+</head>
+<body>
+    <h1>Event Listener Practice</h1>
+
+    <!-- Button to demonstrate click event -->
+    <button id="click-button">Click Me!</button>
+
+    <!-- Input field to demonstrate input event -->
+  <div id="container1">
+    
+  </div>
+
+<script>
+const butt=document.getElementById("click-button");
+  const cont=document.getElementById("container1");
+  butt.addEventListener("click",()=>{
+    const el=document.createElement("h1");
+    el.innerText="zain is king";
+    cont.appendChild(el);
+  });
+  
+  
+</script>
+  
+</body>
+</html>
