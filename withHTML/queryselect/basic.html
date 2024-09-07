@@ -36,8 +36,14 @@
       
     const body=document.querySelector("body");  //selects the whole body of the html
     body.innerHTML="<h1>Hacked</h1>";           //discards all the inner html and replaces it with the value u provide
-    const foot=document.quesrySelector("footer");
+    const foot=document.querySelector("footer");
     foot.innerHTML="<p>ur foot gone</p>";
-      
+
+
+      const head=document.querySelector("header");
+      console.log(head.parentElement)    //returns <body>
+      console.log(head.parentElement.children)    //returns evrything in the body
+      const footbutton=document.querySelector("#footer-button");
+      console.log(footbutton.parentElement)    //returns <footer>
   </script>
 </html>
