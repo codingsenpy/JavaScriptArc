@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!---
+ADDING
+
+      CSS
+
+          FOR JS PRACTICE
+  --->
+
+  <style>
+.red-h1{          /*   we're applying red color to a html element with class "red-h1", but this class doesnt exist, so we are using JS to assign a class to any element we like */
+color:red;          
+}
+    
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements Practice</title>
+</head>
+<body>
+    <header id="main-header">
+        <h1 id="page-title">My Practice Page</h1>
+    </header>
+
+    <nav id="main-nav">
+        <a href="#" id="nav-home">Home</a>
+        <a href="#" id="nav-about">About</a>
+        <a href="#" id="nav-contact">Contact</a>
+    </nav>
+
+    <div id="intro-section" class="container">
+        <h2 id="intro-heading">Introduction</h2>
+        <p id="intro-paragraph">This is a paragraph inside a div element. The div is used to group content together.</p>
+    </div>
+
+    <div id="code-section" class="container">
+        <h2 id="code-heading">Code Example</h2>
+        <p id="code-description">Below is an example of how to include code in HTML:</p>
+        <pre id="code-example">
+<code id="code-block">
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+console.log(greet('World'));
+</code>
+        </pre>
+    </div>
+
+    <footer id="page-footer">
+        <p id="footer-text">&copy; 2024 My Practice Page</p>
+    </footer>
+</body>
+
+  <script>
+    const el=document.getElementById('code-section');          /*
+                                                                nodeName: "DIV" - The type of the node.
+                                                                nodeType: 1 - The type of the node (element node).
+                                                                id: "code-section" - The ID of the element.
+                                                                className: "container" - The class name of the element.
+                                                                innerHTML: The HTML content inside the <div>, which includes the nested <h2>, <p>, and <pre> elements.
+                                                                parentNode: The parent node of the <div>, which in this case is the <body> element.
+          //  O/P========================================>      children: A live HTMLCollection of the child elements inside the <div>, including <h2>, <p>, and <pre>.
+                                                                style: A CSSStyleDeclaration object representing the inline styles applied to the <div>, which is empty if no inline styles are applied.
+                                                                */
+    console.log(el);
+
+const heading1=document.getElementById('page-title');
+    heading1.classList.add('red-h1');        //assigning a html element a class name
+
+    heading1.style.textDecoration="underline"    //adding inline css property to html element
+    
+    console.log(heading1.classList);      //returns array of list of classes of given element
+const dv=document.getElementById('intro-section');
+    dv.classList.remove("container")
+
+    heading1.parentElement.style.background="grey";    //adding style to a parent element of a given html element
+
+    heading1.setAttribute("data-info","123");      //giving attribute to a html elelementet
+
+    dv.remove();                                        //removes existence of element from DOM
+  </script>
+  
+</html>
