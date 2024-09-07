@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMLCollection Practice</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-red">Red Box 1</div>
+        <div class="box box-green">Green Box 2</div>
+        <div class="box box-blue">Blue Box 3</div>
+        <div class="box box-yellow">Yellow Box 4</div>
+    </div>
+
+    <div class="container">
+        <div class="box box-red">Red Box 5</div>
+        <div class="box box-green">Green Box 6</div>
+        <div class="box box-blue">Blue Box 7</div>
+        <div class="box box-yellow">Yellow Box 8</div>
+    </div>
+
+    <div class="nested-container">
+        <div class="nested-box">Nested 1</div>
+        <div class="nested-box">Nested 2</div>
+        <div class="nested-box">Nested 3</div>
+    </div>
+
+    <section class="info-section">
+        <div class="info-box">Info Box 1</div>
+        <div class="info-box">Info Box 2</div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-box">Footer Box 1</div>
+        <div class="footer-box">Footer Box 2</div>
+    </footer>
+</body>
+
+  <script>
+const elements=document.getElementsByClassName("container");    //returns 'HTMLCollection' object with all the elements with given class name
+    for(let i=0;i<elements.length;i++){
+      console.log(elements.item(i));                           
+      elements.item(i).style.background="blue"                  //changes background color of to  blue
+    
+  </script>
+  
+</html>
