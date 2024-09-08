@@ -15,7 +15,7 @@ console.log(data);    //Promise { <pending> }
 
 async function getData(){                                                    //  'ASYNC' KEYWORD MAKES THE FUNCTION RUN ASYNCHRONOSLY
   let datav2=await fetch("https://jsonplaceholder.typicode.com/comments");   //  'AWAIT' PAUSES WXECUTION OF ASYNC FUNCTION UNTIL PROMISE IS RESOLVED
-  console.log("datav2");                                                       //  
+  console.log("datav2");                                                     //  
 }                                                                            //  CALLING THE FUNC WHICH LOGS THE FETCHED DATA
 getData();                                                                   //  SINCE FETCHING DATA TAKED TIME, 'RESULT' IS PRINTED BEFORE 'DATAV2' ISPRINTED
 console.log(result)                                                                  
