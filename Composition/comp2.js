@@ -13,7 +13,7 @@ function compose(...fns){          // AN ARRAY OF FUNCTIONS
   };                               //
 }                                  //
 
-const task=compose(add,square);
+const task=compose(add,square,(val)=>val+2);
 console.log(task(2,3));
 
 ////////↓↓↓↓ES6 MODERN JS VERSION↓↓↓↓///////
