@@ -20,7 +20,7 @@ let step1=autoEmail("Zain");                                                    
 let step2=step1("Progress");                                                                                                // 
 step2("How is ur javaScriptArc?");  //O/P:Sending email to Zain on the subject Progress with body: How is ur javaScriptArc? //
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////↓↓↓↓↓↓↓CONSINE VERSION↓↓↓↓↓↓↓///////////////////////////////////////////////////////
+//////////////////////////////////////////↓↓↓↓↓↓↓ES6 MODERN JS VERSION↓↓↓↓↓↓↓/////////////////////////////////////////////////
 const autoEmail=(to)=>(subject)=>(body)=>console.log(`Sending email to ${to} on the subject ${subject} with body: ${body}`);//
 let step1=autoEmail("Zain");                                                                                                // 
 let step2=step1("Progress");                                                                                                // 
