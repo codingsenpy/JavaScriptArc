@@ -25,4 +25,8 @@ s4.sort()
 s4.reverse();
 //Joins all elements of an array into a string and returns it.
 const fullcast=s4.join('-');//each element seperated by '-'
-//
+
+//slicing based on indexes
+s4.slice(0,2)// 0 is start index and 2 is end index *it returns a new array*
+//splice(similar to slice)
+s4.splice(0,2)//0 is the start index and 2 is the number of elements to remove starting from the start index, *it returns new array and modifies the existing array*
